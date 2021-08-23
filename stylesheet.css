@@ -1,0 +1,128 @@
+.container {
+    position: relative;
+    top: 32px;
+    left: 16px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+button[data-setter] {
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: 'Arial';
+    font-weight: 600;
+    font-size: 36px;
+    width: 55px;
+    height: 30px;
+    color: #b6b7bc;
+    cursor: pointer;
+}
+
+button[data-setter]:hover {
+    opacity: 0.5;
+}
+
+.setters {
+    position: absolute;
+    left: 92px;
+    right: 130px;
+    top: 5px;
+}
+
+.minutes-set {
+    float: left;
+    margin-right: 28px;
+}
+
+.seconds-set {
+    float: right;
+}
+
+.controlls {
+    position: absolute;
+    left: 75px;
+    top: 50px;
+    text-align: center;
+}
+
+.display-remain-time {
+    font-family: 'Arial';
+    font-weight: 100;
+    font-size: 125px;
+    color: #febf02;
+}
+
+#pause {
+    outline: none;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.play::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 36px solid #b6b7bc;
+}
+
+.pause::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 15px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 1px;
+    border: 5px solid #b6b7bc;
+    border-top: none;
+    border-bottom: none;
+}
+
+#pause:hover {
+    opacity: 0.8;
+}
+
+.e-c-base {
+    fill: none;
+    stroke: #B6B6B6;
+    stroke-width: 4px
+}
+
+.e-c-progress {
+    fill: none;
+    stroke: #febf02;
+    stroke-width: 4px;
+    transition: stroke-dashoffset 0.7s;
+}
+
+.e-c-pointer {
+    fill: #FFF;
+    stroke: #febf02;
+    stroke-width: 2px;
+}
+
+#e-pointer {
+    transition: transform 0.7s;
+}
+
+h1 {
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 40px;
+}
+
+#timer-beep {
+    position: absolute;
+    top: -100000em;
+}
